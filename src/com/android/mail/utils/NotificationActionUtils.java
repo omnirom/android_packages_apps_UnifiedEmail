@@ -523,6 +523,7 @@ public class NotificationActionUtils {
 
         final NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
 
+        builder.setPriority(Notification.PRIORITY_MIN);
         builder.setSmallIcon(R.drawable.stat_notify_email);
         builder.setWhen(notificationAction.getWhen());
 
